@@ -1,0 +1,108 @@
+.services .service-item {
+  position: relative;
+}
+
+.services .service-item .icon {
+  background: #e8f5f3;
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid var(--accent-color);
+  margin-right: 20px;
+}
+
+#services {
+  margin-left: 300px;
+  padding: 50px 20px;
+  font-size: small;
+  min-height: 100vh;
+  margin-top: 25px;
+}
+
+#services .section-title {
+  margin-bottom: 30px;
+}
+
+#services .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive typography for small screens */
+@media (max-width: 767px) {
+  #services .section-title h2 {
+      font-size: 2rem;
+  }
+
+  #services .section-title p {
+      font-size: 1rem;
+  }
+
+  .card-body {
+      padding: 1.5rem;
+  }
+}
+
+.accordion-button.small-btn {
+  padding: 0.1rem 0.3rem; 
+  font-size: 0.875rem; 
+}
+
+.testimonial-slide {
+  display: flex; 
+  align-items:right; 
+  justify-content: right; 
+  max-width: 600px; 
+  margin: auto; 
+  padding: 20px; 
+  border: 1px solid #dee2e6; 
+  border-radius: 5px; 
+  background-color: #f8f9fa; 
+  text-align: center; 
+}
+
+.testimonial {
+  display: none;
+  padding: 20px; 
+  font-size: 1.2em; 
+  color: #333; 
+  margin-left:50px;
+  transition: opacity 0.9s ease; 
+}
+
+.testimonial.active {
+  display: block; 
+}
